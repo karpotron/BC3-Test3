@@ -1,0 +1,16 @@
+
+:root{--bg:#fff;--card:#f8f8f9;--accent:#0a84ff;--text:#111}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial;margin:0;background:var(--bg);color:var(--text)}
+header{padding:12px;background:linear-gradient(90deg,var(--accent),#6fb2ff);color:white}
+h1{font-size:18px}
+.subtitle{opacity:0.95;margin-top:6px;font-size:13px}
+section{padding:12px}
+.sectionCard{background:var(--card);padding:8px;border-radius:8px;margin:8px 0}
+.node{display:flex;justify-content:space-between;align-items:center;padding:10px;background:#fff;border-radius:8px;margin:6px 0;box-shadow:0 1px 0 rgba(0,0,0,0.05)}
+.node .left{flex:1}
+.node .right{width:220px;text-align:right;font-size:14px}
+.codeTag{font-family:monospace;background:#eee;padding:4px 6px;border-radius:6px}
+.button{background:var(--accent);color:white;padding:8px 10px;border-radius:8px;border:none}
+.hidden{display:none}
+#breadcrumb{font-size:14px}
+.detailRow{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #eee}

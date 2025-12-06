@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BC3 Reader — Estructura (Personalizado)</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div style="display:flex;align-items:center;gap:10px">
+    <button id="upBtn" class="button" style="display:none">⬆ Subir nivel</button>
+    <h1 style="margin:0">BC3 Reader — Estructura</h1>
+  </div>
+  <p class="subtitle">Navega capítulos → subcapítulos → partidas. Cada partida muestra Cantidad · Precio · Importe</p>
+</header>
+<main>
+  <section id="controls">
+    <input id="fileInput" type="file" accept=".bc3,application/octet-stream" />
+    <div id="status"></div>
+  </section>
+  <section id="view">
+    <div id="breadcrumb" class="sectionCard"></div>
+    <div id="listContainer"></div>
+  </section>
+  <div id="detailModal" class="hidden sectionCard" style="position:fixed;left:8px;right:8px;bottom:8px;top:80px;overflow:auto">
+    <button id="closeDetail" class="button">Cerrar</button>
+    <div id="detailContent"></div>
+  </div>
+</main>
+<footer>
+  <p>Para instalar: Safari → Compartir → Añadir a pantalla de inicio.</p>
+</footer>
+<script src="app_custom.js"></script>
+</body>
+</html>
